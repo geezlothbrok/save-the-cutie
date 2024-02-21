@@ -138,8 +138,228 @@ body::-webkit-progress-bar {
     gap: 1rem;
 }
 
+.options {
+    display: none;
+}
+
+/* MEDIA QUERY FOR MEDIUM SCREENS */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+        position: relative;
+        padding: 5px;
+    }
+
+    .toogle-buttons {
+        display: flex;
+        position: absolute;
+        left: -5px;
+        font-size: 22px;
+    } 
+    
+    .nav-links {
+        display: flex;
+        position: absolute;
+        top: 3.58rem;
+        background: red;
+        left: 0;
+        width: 30%;
+
+    }
+
+    .nav-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        padding: 25px;
+    }
+
+    /* .nav-links .nav-ul a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+    } */
+    
+
+    .contacts {
+        display: flex;
+        position: absolute;
+        top: 3.58rem;
+        right: 0px;
+        background: red;
+        justify-content: center;
+        align-items: center;
+        padding-right: 50px;
+        width: 30%;
+
+
+    }
+
+    .contacts .contact-lists {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    /* .contacts .contact-lists a {
+        color: #fb8500;
+        text-decoration: none;
+        font-size: 20px;
+    
+    } */
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        /* max-width: 70px;
+        height: 40px; */
+        overflow: hidden;
+        left: 45%;
+    }
+    
+    .logo img {
+        z-index: 111;
+        width: 40px;
+        height: 45px;
+        object-fit: cover;
+        /* margin-right: 10px; */
+        border-radius: 30px 30px 40px 60px;
+    }
+
+    .logo .logo-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "Shadows Into Light", cursive;
+      font-weight: bolder;
+      font-size: 2rem;
+      color: #fff; 
+    }
+
+    .options {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 50px;
+        font-size: 22px;
+        font-weight: bolder;
+    } 
+
+    .nav-links .nav-ul a {
+        text-align: center;
+ 
+}}
+
+
 /* MEDIA QUERY FOR SMALL SCREEN RESPONSIVENESS */
 
-@media (max-width: 420px) {
+@media screen and (min-width: 280px) and (max-width: 480px) {
+
+    .navbar {
+        width: 100%;
+        position: relative;
+        padding: 5px;
+    }
+
+    .toogle-buttons {
+        display: flex;
+        position: absolute;
+        left: -5px;
+        font-size: 22px;
+    } 
     
+    .nav-links {
+        display: flex;
+        position: absolute;
+        top: 3.58rem;
+        background: red;
+        left: 0;
+
+    }
+
+    .nav-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        padding: 20px;
+    }
+
+    .contacts {
+        display: flex;
+        position: absolute;
+        top: 3.58rem;
+        right: 0px;
+        background: red;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    .contacts .contact-lists {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        /* max-width: 70px;
+        height: 40px; */
+        overflow: hidden;
+        left: 35%;
+    }
+    
+    .logo img {
+        z-index: 111;
+        width: 40px;
+        height: 45px;
+        object-fit: cover;
+        /* margin-right: 10px; */
+        border-radius: 30px 30px 40px 60px;
+    }
+
+    .logo .logo-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: "Shadows Into Light", cursive;
+      font-weight: bolder;
+      font-size: 1.7rem;
+      color: #fff; 
+    }
+
+    .options{
+        display: block;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 30px;
+        font-size: 22px;
+    }
+
+    .nav-links .nav-ul a {
+        text-align: center;
+    }
 }
