@@ -1,4 +1,5 @@
 body {
+    height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -74,6 +75,18 @@ body::-webkit-progress-bar {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
+    position: relative;
+}
+
+
+.nav-links li a.active::after {
+    content: "";
+    display: block;
+    background: #fff;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
 }
 
 .contacts {
@@ -132,7 +145,7 @@ body::-webkit-progress-bar {
 }
 
 .toogle {
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -156,14 +169,18 @@ body::-webkit-progress-bar {
         left: -5px;
         font-size: 22px;
     } 
+
+    .nav-links li a.active::after {
+        display: none;
+    }
     
     .nav-links {
-        display: flex;
+        display: none;
         position: absolute;
         top: 3.58rem;
         background: red;
         left: 0;
-        width: 30%;
+        width: unset;
 
     }
 
@@ -174,6 +191,14 @@ body::-webkit-progress-bar {
         align-items: center;
         text-align: start;
         padding: 25px;
+    }
+
+    .nav-ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
     }
 
     /* .nav-links .nav-ul a {
@@ -199,20 +224,22 @@ body::-webkit-progress-bar {
     }
 
     .contacts .contact-lists {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        
         padding-bottom: 20px;
     }
 
-    /* .contacts .contact-lists a {
-        color: #fb8500;
-        text-decoration: none;
-        font-size: 20px;
-    
-    } */
+    .contacts .contact-lists li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+    }
 
     .logo {
         display: flex;
@@ -281,12 +308,20 @@ body::-webkit-progress-bar {
     } 
     
     .nav-links {
-        display: flex;
+        display: none;
         position: absolute;
         top: 3.58rem;
         background: red;
         left: 0;
+        width: unset;
+    }
 
+    .nav-links li a.active::after {
+        display: none;
+    }
+
+    .toogle li {
+        cursor: pointer;
     }
 
     .nav-ul {
@@ -298,8 +333,16 @@ body::-webkit-progress-bar {
         padding: 20px;
     }
 
-    .contacts {
+    .nav-ul li {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .contacts {
+        display: none;
         position: absolute;
         top: 3.58rem;
         right: 0px;
@@ -309,12 +352,30 @@ body::-webkit-progress-bar {
         padding-right: 20px;
     }
 
-    .contacts .contact-lists {
+    .contact-lists {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .contacts .contact-lists li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .contacts .contact-lists li a {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 100% ;
     }
 
     .logo {
@@ -348,12 +409,20 @@ body::-webkit-progress-bar {
       color: #fff; 
     }
 
-    .options{
-        display: block;
+    /* .options{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    #close, #close-menu {
+        display: none;
     }
 
-    .menu {
-        display: block;
+    .options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         right: 30px;
         font-size: 22px;
