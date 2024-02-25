@@ -1,98 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
 
-<!-- GOOGLE FONT FOR LOGO TEXT -->
+         <!-- GOOGLE FONT FOR HEADER -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <!-- GOOGLE FONT FOR LOGO TEXT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+            rel="stylesheet" />
 
-<!-- GOOGLE FONT FOR BODY -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Save the Cute Lives</title>
-</head>
-<body>
-    <div class="container-main">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/icon.jpg" alt="">
-                <p class="logo-text">woo zoo</p>
-            </div>
-            <div class="nav-links">
-                <ul class="nav-ul">
+        <!-- GOOGLE FONT FOR BODY -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <title>Save the Cute Lives</title>
+    </head>
+    <body>
+        <div class="container-main">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="images/icon.jpg" alt />
+                    <p class="logo-text">woo zoo</p>
+                </div>
+                <div class="nav-links">
+                    <ul class="nav-ul">
+                        <li>
+                            <a href="animal.html" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href>Plan Your Visit</a>
+                        </li>
+                        <li>
+                            <a href="our-animals.html">Our Animals</a>
+                        </li>
+                        <li>
+                            <a href>Ticket Prices</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul class="contact-lists">
+                        <li>
+                            <a href>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href>
+                                <i class="fa fa-envelope"
+                                    aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <button type="button" class="btn">donate</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toogle-buttons">
+                    <ul class="toogle">
+                        <li><i class="fa fa-bars" aria-hidden="true"
+                                id="open"></i></li>
+                        <li><i class="fa fa-times" aria-hidden="true"
+                                id="close"></i></li>
+                    </ul>
+                </div>
+                <div class="options">
+                    <i class="menu fa fa-ellipsis-v" aria-hidden="true"
+                        id="menu"></i>
                     <li>
-                        <a href="animal.html" class="active">Home</a>
+                        <i class="fa fa-times" aria-hidden="true"
+                            id="close-menu"></i>
                     </li>
-                    <li>
-                       <a href="about.html">About</a>                       
-                    </li>
-                    <li>                        
-                        <a href="">Plan Your Visit</a>                        
-                    </li>
-                    <li>                       
-                        <a href="our-animals.html">Our Animals</a>                      
-                    </li>
-                    <li>                       
-                        <a href="">Ticket Prices</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">Contacts</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contacts">
-                <ul class="contact-lists">
-                    <li>
-                        <a href="">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <button type="button" class="btn">donate</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="toogle-buttons">
-                <ul class="toogle">
-                    <li><i class="fa fa-bars" aria-hidden="true" id="open"></i>
-                    </li>
-                    <li><i class="fa fa-times" aria-hidden="true" id="close"></i>
-                    </li>
-                </ul>
-            </div>
-            <div class="options">
-                <i class="menu fa fa-ellipsis-v" aria-hidden="true" id="menu"></i>
-                <li><i class="fa fa-times" aria-hidden="true" id="close-menu"></i>
-            </div>
-        </nav>
-    </div>
-    <section id="home">
-        <div class="article">
-            <h1 class="title">
-                Discover The Beautiful World of <span class="wild">Wild Nature</span>
-            </h1>
-            <p class="description">
-                Welcome to Bonobomb Zoo, home to a wide range of exotic animals, insects, birds, and a lot of other animal groups. Buy a ticket to our zoo and discover the variety of nature today!
-            </p>
+                </div>
+            </nav>
         </div>
-        <div class="chameleon"><img src="./images/chameleon.png" alt=""></div>
-        
-    </section>
+        <section id="home">
+            <div class="article">
+                <h1 class="title">
+                    Discover The Beautiful World of <span class="wild">Wild
+                        Nature</span>
+                </h1>
+                <p class="description">
+                    Welcome to Bonobomb Zoo, home to a wide range of exotic
+                    animals,
+                    insects, birds, and a lot of other animal groups. Buy a
+                    ticket to our
+                    zoo and discover the variety of nature today!
+                </p>
+                <div class="buttons">
+                <button>buy ticket</button>
+                <button>learn more</button>
+            </div>
+            </div>
 
-    <script src="./main.js"></script>
-</body>
+            
+            <div class="chameleon">
+                <img src="./images/chameleon.png" alt />
+                </div>
+        </section>
 
+        <script src="./main.js"></script>
+    </body>
 </html>

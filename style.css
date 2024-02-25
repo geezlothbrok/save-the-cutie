@@ -13,6 +13,9 @@ body::-webkit-progress-bar {
     scroll-behavior: smooth;
 }
 
+
+/* STYLES FOR NAVIGATION BAR */
+
 .navbar {
     background-color: transparent;
     position: fixed;
@@ -31,8 +34,6 @@ body::-webkit-progress-bar {
     justify-content: center;
     align-items: center;
     position: relative;
-    /* max-width: 70px;
-    height: 40px; */
     overflow: hidden;
 }
 
@@ -84,11 +85,13 @@ body::-webkit-progress-bar {
 .nav-links li a.active::after {
     content: "";
     display: block;
-    background: #fff;
+    background: #fb8500;
     height: 5px;
-    width: 100%;
+    width: 45%;
     position: absolute;
     bottom: -20px;
+    border-radius: 20px;
+    transition: 2s ease;
 }
 
 .contacts {
@@ -158,22 +161,88 @@ body::-webkit-progress-bar {
     display: none;
 }
 
-section {
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    ;
-}
+/* STLYLES FOR PAGES CONTENTS */
 
 section#home {
-    background: rgb(114, 184, 5)
+    background: rgb(114, 184, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chameleon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 2rem;
+    color: #fff;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-family: "Itim", cursive;
+    color: #fff;
+}
+
+.chameleon img {
+    object-fit: cover;
+    width: 700px;
+    height: 640px;
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+}
+.buttons button {
+    text-transform: capitalize;
+    background: #fb8500;
+    outline: none;
+    box-sizing: border-box;
+    border: transparent;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: .97rem;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: color 1s ease;
+}
+
+.buttons :nth-child(2) {
+    background: transparent;
+    border: 2px solid#fff;
+    transition: color 1s ease;
+}
+
+.buttons :nth-child(2):hover {
+    background: #fff;
+    color: black;
+}
+
+.buttons button:hover {
+    background: #bb3e03;
 }
 
 /* MEDIA QUERY FOR MEDIUM SCREENS */
 @media screen and (min-width: 500px) and (max-width: 1024px) {
     .navbar {
         width: 100%;
-        /* position: fixed; */
+        
         padding: 5px;
         background: transparent;
     }
@@ -216,14 +285,6 @@ section#home {
         padding: 2rem;
     }
 
-    /* .nav-links .nav-ul a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: 500;
-        font-size: 20px;
-    } */
-    
-
     .contacts {
         display: none;
         position: absolute;
@@ -257,8 +318,6 @@ section#home {
         justify-content: center;
         align-items: center;
         position: absolute;
-        /* max-width: 70px;
-        height: 40px; */
         overflow: hidden;
         left: 45%;
     }
@@ -268,7 +327,6 @@ section#home {
         width: 40px;
         height: 45px;
         object-fit: cover;
-        /* margin-right: 10px; */
         border-radius: 30px 30px 40px 60px;
     }
 
@@ -287,10 +345,6 @@ section#home {
         display: none;
     }
 
-    /* .options {
-        display: block;
-    } */
-
     .options {
         display: flex;
         justify-content: center;
@@ -299,14 +353,6 @@ section#home {
         right: 30px;
         font-size: 22px;
     }
-
-    /* .menu {
-        display: block;
-        position: absolute;
-        right: 50px;
-        font-size: 22px;
-        font-weight: bolder;
-    }  */
 
     .nav-links .nav-ul a {
         text-align: center;
@@ -320,7 +366,6 @@ section#home {
 
     .navbar {
         width: 100%;
-        /* position: relative; */
         padding: 5px;
     }
 
@@ -407,8 +452,6 @@ section#home {
         justify-content: center;
         align-items: center;
         position: absolute;
-        /* max-width: 70px;
-        height: 40px; */
         overflow: hidden;
         left: 35%;
     }
@@ -418,7 +461,6 @@ section#home {
         width: 40px;
         height: 45px;
         object-fit: cover;
-        /* margin-right: 10px; */
         border-radius: 30px 30px 40px 60px;
     }
 
@@ -432,12 +474,6 @@ section#home {
       font-size: 1.7rem;
       color: #fff; 
     }
-
-    /* .options{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    } */
 
     #close, #close-menu {
         display: none;
