@@ -161,14 +161,20 @@ body::-webkit-progress-bar {
     display: none;
 }
 
-/* STLYLES FOR PAGES CONTENTS */
+/* STLYLES FOR HOME PAGE */
+
+.container {
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+
+}
 
 section#home {
     background: rgb(114, 184, 5);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .chameleon {
@@ -236,6 +242,58 @@ section#home {
 
 .buttons button:hover {
     background: #bb3e03;
+}
+
+/* ABOUT PAGE STYLING */
+
+section#about {
+    background: rgb(255, 199, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.giraffe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.giraffe img {
+    object-fit: cover;
+    width: 500px;
+    height: 640px;
+    position: absolute;
+    left: 6rem;
+}
+
+.about-article {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    right: -1rem;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.rhino {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rhino img {
+    object-fit: cover;
+    width: 690px;
+    height: 600px;
+    padding-top: 40px;
 }
 
 /* MEDIA QUERY FOR MEDIUM SCREENS */
