@@ -450,7 +450,7 @@ video:focus {
 .svg-row i {
     color: #fff;
     font-size: 2.5rem;
-    background: yellow;
+    background: #FFD600;
     height: 4.5rem;
     width: 4.5rem;
     display: flex;
@@ -458,6 +458,16 @@ video:focus {
     align-items: center;
     margin-left: 2rem;
     border-radius: 50% 25% 50% 25%;
+    opacity: 1;
+}
+
+.svg-row h3 {
+    text-transform: capitalize;
+    font-size: medium;
+}
+
+.svg-row p {
+    font-size: small;
 }
 
 /* MEDIA QUERY FOR MEDIUM SCREENS */
