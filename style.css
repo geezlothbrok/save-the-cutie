@@ -299,9 +299,11 @@ section.about {
 .all-container {
     background-color: rgb(0, 171, 225);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: 100vw;
+    gap: 5rem;
 }
 
 .video-container {
@@ -313,9 +315,24 @@ section.about {
 }
 
 video {
-    width: 550px;
-    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
+    object-fit: cover;
+    width: 430px;
+    height: 250px;
+    margin-right: 5rem;
+    margin-top: 7rem;
+}
+
+source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video:focus {
+    outline: none;
 }
 
 .svg-container {
@@ -347,6 +364,8 @@ video {
 .icon-name {
     font-size: 1rem;
     text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    line-height: 22px;
 }
 
 .information .description {
@@ -355,6 +374,7 @@ video {
     font-weight: 500;
     color: #fff;
     padding-left: 4rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .information {
@@ -365,6 +385,15 @@ video {
     position: absolute;
     bottom: -25%;
     left: 8%;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* STYLES FOR PARROTS SECTION */
+
+.parrots {
+    background: rgb(119, 76, 190);
+    height: 100%;
+    width: 100vw;
 }
 
 /* MEDIA QUERY FOR MEDIUM SCREENS */
