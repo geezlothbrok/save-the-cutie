@@ -169,7 +169,7 @@ body::-webkit-progress-bar {
 
 }
 
-section#home {
+section.home, #home {
     background: rgb(114, 184, 5);
     display: flex;
     justify-content: center;
@@ -246,7 +246,7 @@ section#home {
 
 /* ABOUT PAGE STYLING */
 
-section#about {
+section.about {
     background: rgb(255, 199, 0);
     display: flex;
     justify-content: center;
@@ -272,7 +272,6 @@ section#about {
 .about-article {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
     flex-wrap: wrap;
     position: absolute;
@@ -294,6 +293,78 @@ section#about {
     width: 690px;
     height: 600px;
     padding-top: 40px;
+}
+
+/* VIDEO DUCUMETARY SECTION STYLES */
+.all-container {
+    background-color: rgb(0, 171, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 300px;   
+}
+
+video {
+    width: 550px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.svg-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    padding-left: 2rem;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.svg-icon img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.information .title {
+    padding-left: 4rem;
+}
+
+.icon-name {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.information .description {
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 4rem;
+}
+
+.information {
+    position: relative;
+}
+
+.information .buttons {
+    position: absolute;
+    bottom: -25%;
+    left: 8%;
 }
 
 /* MEDIA QUERY FOR MEDIUM SCREENS */
