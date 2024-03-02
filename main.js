@@ -65,4 +65,4 @@ function prevImage() {
 
 nextButton.addEventListener('click', nextImage);
 prevButton.addEventListener('click', prevImage);
-setInterval(nextImage, 5000);
+setInterval(nextImage, 2500);
