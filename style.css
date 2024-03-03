@@ -621,31 +621,124 @@ video:focus {
 } 
 
 /* TICKETS PRICES STLYES */
-
 .ticket-container {
     background: rgb(65, 90, 222);
-    width: 100vw;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100vw;
+    display: grid;
+    place-content: center;
     position: relative;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+    color: #fff;
 }
 
 .contents {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 3rem;
     position: absolute;
-    left: 15%;
+    left: -100px;
+    width: 100%;
+    height: 100%;
+}
+
+.content, .info-text {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.content-box {
+    padding: 10px;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#light {
+    font-size: 13px;
+}
+
+
+.content-box .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+   background: #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 30px;
+}
+
+.header{
+    font-size: 1.5rem;
+    font-family: "Itim", cursive;
+    text-align: center;
+}
+
+ .price {
+    font-weight: bolder;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-click button {
+    outline: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: color .7s ease;
+    font-weight: bold;
+}
+
+.button-click button:hover {
+    background: #fff;
+    color: black;
+    font-weight: bold;
+}
+
+/*.prices {
+   text-align: center;
+   margin-left: 55px;
+} */
+
+.thumbnail-container {
+    margin: 0 20px 0 30px;
+    background:rgba(65, 90, 222, 0.6);
+    padding: 0 15px 30px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .bird-container {
@@ -660,19 +753,6 @@ video:focus {
 .bird-container img {
     width: 370px;
     height: 600px;
-}
-
-.thumbnail {
-    background-color: red;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.thumb ul li {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    background-color: #fff;
 }
 
 
