@@ -66,3 +66,9 @@ function prevImage() {
 nextButton.addEventListener('click', nextImage);
 prevButton.addEventListener('click', prevImage);
 setInterval(nextImage, 2500);
+
+// MAP FUNCTIONALITY
+var map = L.map('.maps').setView([51.5005, -0.09], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+{attribtion: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors', maxZoom: 18,}).addTo(map);
